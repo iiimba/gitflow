@@ -9,5 +9,10 @@ namespace Gitflow.Services
         {
         
         }
+
+        public void UpdateProduct(Product product)
+        {
+
+        }
     }
 }

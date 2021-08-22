@@ -39,5 +39,13 @@ namespace Gitflow.Controllers
 
             return Ok();
         }
+
+        [HttpPut]
+        public IActionResult UpdateProduct(Product product)
+        {
+            _productService.UpdateProduct(product);
+
+            return Ok();
+        }
     }
 }
