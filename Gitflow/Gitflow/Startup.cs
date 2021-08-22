@@ -1,3 +1,5 @@
+using Gitflow.Services;
+using Gitflow.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,6 +15,7 @@ namespace Gitflow
         {
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddTransient<IProductService, ProductService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
