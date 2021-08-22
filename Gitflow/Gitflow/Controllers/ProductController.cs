@@ -47,5 +47,11 @@ namespace Gitflow.Controllers
 
             return Ok();
         }
+
+        [HttpDelete]
+        public IActionResult DeleteProduct(Product product)
+        {
+            return Ok();
+        }
     }
 }
