@@ -14,5 +14,14 @@ namespace Gitflow.Controllers
 
             return Ok(product);
         }
+
+        [HttpGet("list")]
+        public IActionResult GetList()
+        {
+            var product1 = new Product { Id = 1, Name = "Water", Price = 14.15m };
+            var product2 = new Product { Id = 2, Name = "Bread", Price = 11.5m };
+
+            return Ok(new[] { product1, product2 });
+        }
     }
 }
